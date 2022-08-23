@@ -37,7 +37,15 @@ body {
   font-family: "OpenSans-Regular",sans-serif;
   font-size: 18px;
   font-weight: 400;
-  background-color: #FFF1F8;
+  color: #000000;
+}
+
+.woman {
+  background-color: #fff1f8;
+}
+
+.man {
+  background-color: #eff9fe;
 }
 
 button {
@@ -99,27 +107,34 @@ img {
   border-radius: 30px;
 }
 
+.man .header__change {
+  background-color: #1178b2;
+}
+
 .header__gender {
   width: 60px;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid transparent;
+  border-radius: 10px;
 }
 
 .header__gender--male {
-  background: url('../img/men.svg') center center no-repeat;
-  background-size: contain;
+  background: url('../img/man.svg') center center no-repeat;
+  background-size: 36px 36px;
 }
 
 .header__gender--female {
-  background: url('../img/women.svg') center center no-repeat;
-  background-size: contain;
+  background: url('../img/woman.svg') center center no-repeat;
+  background-size: 36px 36px;
 }
 
-.header__gender--active {
-  border: 1px solid #C300C7;
-  border-radius: 10px;
-  box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.04);
+.man .header__gender--male {
+  border-color: #1178b2;
+}
+
+.woman .header__gender--female {
+  border-color: #c300c7;
 }
 
 /* main */
@@ -161,11 +176,20 @@ img {
 .card__text p {
   margin: 0;
   font-size: max(3em, min(calc(100vw * 3 / (840 /3))), 6em);
+  color: #000000;
+}
+
+.woman .card__text p {
   font-family: "BadScript-Regular", sans-serif;
   font-style: italic;
   font-weight: 400;
   line-height: 1.8;
-  color: #000000;
+}
+
+.man .card__text p {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 /* footer */
@@ -199,6 +223,14 @@ img {
   gap: 16px;
 }
 
+.footer__social-link {
+  color: #c300c7;
+}
+
+.man .footer__social-link {
+  color: #1178b2;
+}
+
 @media (max-width: 880px) {
   .header {
     padding-top: 18px;
@@ -225,7 +257,7 @@ img {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
   .header__container {
     flex-direction: column;
     justify-content: flex-start;
