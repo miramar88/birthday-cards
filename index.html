@@ -11,11 +11,11 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <div class="header__btn-wrapper">
+      <div class="header__btn-wrapper header__btn-wrapper--left">
         <button class="header__change header__change--text" type="button">Поменять поздравление</button>
         <button class="header__change header__change--bg" type="button">Поменять фон</button>
       </div>
-      <div class="header__btn-wrapper">
+      <div class="header__btn-wrapper header__btn-wrapper--right">
         <button class="header__gender header__gender--male" type="button" aria-label="Поменять поздравление на мужское"></button>
         <button class="header__gender header__gender--female header__gender--active" type="button" aria-label="Поменять поздравление на женское"></button>
       </div>
@@ -25,17 +25,21 @@
     <div class="container card__container">
       <div class="card__wrapper card__wrapper--female">
         <img class="card__image" src="img/female/card-w-01.jpg" width="840" height="520" alt="Фон открытки.">
-        <pre class="card__text">
-          Поздравляю с днем рожденья!
-          Пусть будет жизнь полна веселья,
-          Не будет грусти и хлопот,
-          А только счастье круглый год!
-          
-          Желаю творческих успехов,
-          Прекрасных дней, улыбок, смеха.
-          Любви, душевного тепла,
-          Как сказка, чтобы жизнь была!
-        </pre>
+        <div class="card__text">
+          <p>
+            Поздравляю с днем рожденья!<br>
+            Пусть будет жизнь полна веселья,<br>
+            Не будет грусти и хлопот,<br>
+            А только счастье круглый год!<br>
+          </p>
+          <p>
+            Желаю творческих успехов,<br>
+            Прекрасных дней, улыбок, смеха.<br>
+            Любви, душевного тепла,<br>
+            Как сказка, чтобы жизнь была!<br>
+          </p>
+        </div>
+        
       </div>
     </div>
   </main>
@@ -43,7 +47,7 @@
     <div class="container footer__container">
       <div class="footer__policies">
         <p>Design: Anastasia Ilina</p>
-        <p>Сoder: Ritaynx</p>
+        <p>Сoder: Margarita Smirnova</p>
         <p>© HBCard, 2022
       </div>
       <ul class="footer__social">
